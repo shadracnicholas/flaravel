@@ -1,7 +1,7 @@
-# Flaravel 💰💰 - A Laravel Package for Flutterwave
+# Flaravel 💰💰 - A Laravel 9 Package for Flutterwave
 
 This package is intended to be used with Laravel implementing the Flutterwave Payment Gateway.
-Flutterwave Documentation - [link]<https://developer.flutterwave.com/docs/quickstart>
+Flutterwave Documentation - <https://developer.flutterwave.com/docs/quickstart>
 
 ## Installation
 
