@@ -1,10 +1,7 @@
-# Very short description of the package
+# Flaravel - A Laravel Package for Flutterwave
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/shadracnicholas/flaravel.svg?style=flat-square)](https://packagist.org/packages/shadracnicholas/flaravel)
-[![Total Downloads](https://img.shields.io/packagist/dt/shadracnicholas/flaravel.svg?style=flat-square)](https://packagist.org/packages/shadracnicholas/flaravel)
-![GitHub Actions](https://github.com/shadracnicholas/flaravel/actions/workflows/main.yml/badge.svg)
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This package is intended to be used with Laravel implementing the Flutterwave Payment Gateway.
+Flutterwave Documentation - [link]<https://developer.flutterwave.com/docs/quickstart>
 
 ## Installation
 
@@ -15,6 +12,20 @@ composer require shadracnicholas/flaravel
 ```
 
 ## Usage
+
+Publish the configuration file using this command:
+
+```bash
+php artisan vendor:publish --provider="Shadracnicholas\Flaravel\FlaravelServiceProvider"
+```
+
+Update your .env file with the configuration
+
+```php
+FLW_PUBLIC_KEY=FLWPUBK-xxxxxxxxxxxxxxxxxxxxx-X
+FLW_SECRET_KEY=FLWSECK-xxxxxxxxxxxxxxxxxxxxx-X
+FLW_SECRET_HASH='create a random string'
+```
 
 ```php
 // Usage description here
@@ -40,8 +51,8 @@ If you discover any security related issues, please email me@shadracnicholas.com
 
 ## Credits
 
--   [ShadracK Nicholas](https://github.com/shadracnicholas)
--   [All Contributors](../../contributors)
+- [ShadracK Nicholas](https://github.com/shadracnicholas)
+- [All Contributors](../../contributors)
 
 ## License
 
